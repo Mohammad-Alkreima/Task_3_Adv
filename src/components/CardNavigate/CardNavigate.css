@@ -1,0 +1,100 @@
+.Navigate {
+    .cardsNavigate {
+        .cardNavigate {
+            width: 38.26041vw;
+            padding: 80px;
+            border-radius: 12px;
+            border: 2px solid #262626;
+            box-shadow: 6px 6px 0px 2px #1E1E1E;
+            background-color: #FFFFFF;
+            text-align: center;
+            h2 {
+                padding-bottom: 30px;
+                border-bottom-width: 12px;
+                border-bottom-style: dashed;
+                border-bottom-color: bisque;
+                font-size: 48px;
+                font-weight: 700;
+                color: #1A1A1A;
+            }
+            p {
+                margin: 50px 0 80px;
+                font-family: "Outfit", sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 150%;
+                color: #4C4C4D;
+            }
+            button {
+                width: 31.92708vw;
+                max-width: 100%;
+                padding: 18px;
+                margin: auto;
+                border-radius: 10px;
+                border: 2px solid #262626;
+                box-shadow: 4px 4px 0px 2px #1E1E1E;
+                background-color: #FFDECC;
+                color: #333333;
+                font-family: "Outfit", sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .Navigate {
+        .cardsNavigate {
+            .cardNavigate {
+                padding: 60px;
+                border-radius: 10px;
+                box-shadow: 4px 4px 0px 2px #1E1E1E;
+                h2 {
+                    padding-bottom: 24px;
+                    font-size: 34px;
+                }
+                p {
+                    margin: 40px 0 60px;
+                    font-size: 16px;
+                }
+                button {
+                    border-radius: 8px;
+                    box-shadow: 2px 2px 0px 2px #1E1E1E;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .Navigate {
+        .cardsNavigate {
+            .cardNavigate {
+                max-width: 100%;
+                width: 91.7948vw;
+                padding: 40px;
+                box-shadow: 4px 4px 0px 1px #1E1E1E;
+                h2 {
+                    padding-bottom: 20px;
+                    font-size: 28px;
+                }
+                p {
+                    margin: 30px 0 40px;
+                }
+                button {
+                    width: 71.2820vw;
+                    max-width: 100%;
+                    border-radius: 6px;
+                    box-shadow: 4px 4px 0px 1px #1E1E1E;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.ourTestimonials {
+    .cardsTestimoials {
+        .cardTest {
+            width: 22.15260vw;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 6px 6px 0px 2px #1E1E1E;
+            border: 2px solid #262626;
+            text-align: center;
+            flex-shrink: 0;
+            transition: 0.6s;
+            transform: translateX(calc(var(--idx) * -100%));
+            .img {
+                width: 80px;
+                height: 80px;
+                margin: 0px auto 12px;
+                border-radius: 50%;
+                background-color: #FFF5F0;
+                border: 1px solid #333333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            span {
+                font-family: "Outfit", sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                color: #333333;
+            }
+            .rate {
+                margin: 30px 0px;
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+            }
+            .desc {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 150%;
+                font-family: "Outfit", sans-serif;
+                color: #333333;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .ourTestimonials {
+        .cardsTestimoials {
+            .cardTest {
+                width: 23.61111vw;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 4px 4px 0px 2px #1E1E1E;
+                .img {
+                    width: 66px;
+                    height: 66px;
+                    margin-bottom: 10px;
+                }
+                span {
+                    font-size: 20px;
+                }
+                .rate {
+                    margin: 24px 0px;
+                    gap: 4px;
+                }
+                .desc {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .ourTestimonials {
+        .cardsTestimoials {
+            .cardTest {
+                width: 91.79487vw;
+                max-width: 100%;
+                padding: 30px;
+                box-shadow: 4px 4px 0px 1px #1E1E1E;
+                .rate {
+                    margin: 20px 0px;
+                }
+                .desc {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

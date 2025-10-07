@@ -1,0 +1,175 @@
+.heroSertion {
+    width: 94.7916vw;
+    padding: 150px 120px;
+    margin: 60px auto 0px;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 8px 8px 0px 1px #1E1E1E;
+    position: relative;
+    .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        .text {
+            /* max-width: 765px; */
+            span {
+                width: fit-content;
+                padding: 10px 20px;
+                display: block;
+                border-radius: 8px;
+                border: 2px solid #262626;
+                font-family: "Outfit", sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                color: #333333;
+            }
+            h1 {
+                width: 39.8437vw;
+                margin-top: 14px;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 130%;
+                color: #1A1A1A;
+            }
+        }
+        .textLeft {
+            /* width: 39.8437vw; */
+            /* max-width: 765px; */
+            .desc {
+                max-width: 765px;
+                font-family: "Outfit", sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 150%;
+                color: #333333;
+            }
+            .contacts {
+                width: 44vw;
+                /* max-width: 765px; */
+                margin-top: 50px;
+                display: flex;
+                /* justify-content: space-between; */
+                gap: 24px;
+                flex-wrap: wrap;
+                .contact {
+                    /* width: 19.2968vw;
+                    width: 18vw; */
+                    max-width: 370.5px;
+                    padding: 20px;
+                    border: 2px solid #262626;
+                    border-radius: 12px;
+                    background-color: #FFFCFA;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .icon {
+                        width: max-content;
+                        padding: 8px;
+                        border: 2px solid #262626;
+                        border-radius: 6px;
+                        background-color: #FFF5F0;
+                        img {
+                            /* max-width: 100%; */
+                        }
+                    }
+                    .textContact {
+                        font-family: "Outfit", sans-serif;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #262626;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .heroSertion {
+        padding: 100px 80px;
+        margin: 40px auto 0px;
+        border-radius: 10px;
+        box-shadow: 6px 6px 0px 1px #1E1E1E;
+        .img {
+            width: 100px;
+            height: 100px;
+        }
+        .main {
+            .text {  
+                span {
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    font-size: 16px;
+                }
+                h1 {
+                    max-width: 535px;
+                    margin-top: 10px;
+                    font-size: 38px;
+                }
+            }
+            .textLeft {
+                .desc {
+                    max-width: 535px;
+                    font-size: 16px;
+                }
+                .contacts {
+                    /* width: 50vw; */
+                    /* width: 30.1527vw; */
+                    margin-top: 30px;
+                    gap: 20px;
+                    .contact {
+                        /* width: 25vw; */
+                        max-width: 257.5px;
+                        padding: 16px;
+                        border-radius: 8px;
+                        gap: 10px;
+                        .icon {
+                            padding: 6px;
+                            border-radius: 4px;
+                            img {
+                                /* max-width: 100%; */
+                            }
+                        }
+                        .textContact {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .heroSertion {
+        padding: 50px 30px;
+        .main {
+            flex-direction: column;
+            .text {  
+                span {
+                    margin: auto;
+                    font-size: 14px;
+                }
+                h1 {
+                    max-width: 76.4102vw;
+                    margin: 10px auto 20px;
+                    font-size: 28px;
+                    text-align: center;
+                }
+            }
+            .textLeft {
+                .desc {
+                    max-width: 76.4102vw;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

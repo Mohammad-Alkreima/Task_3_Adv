@@ -1,0 +1,67 @@
+.gallery {
+    .filter {
+        max-width: 50.7291vw;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        p {
+            padding: 14px 20px;
+            border: 2px solid #333333;
+            border-radius: 8px;
+            background-color: white;
+            font-family: "Outfit", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1A1A1A;
+            white-space: nowrap;
+            &.active {
+                background-color: #FFEFE5;
+            }
+        }
+    }
+    .cardsGallery {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .gallery {
+        .filter {
+            max-width: 53.4722vw;
+            p {
+                padding: 10px 16px;
+                border-radius: 6px;
+                font-size: 16px;
+            }
+        }
+        .cardsGallery {
+            margin-top: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gallery {
+        .filter {
+            max-width: 100%;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            gap: 10px;
+            overflow-x: auto;
+        }
+        .filter::-webkit-scrollbar {
+            border-radius: 10px;
+        }
+        .filter::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+        }
+        .filter::-webkit-scrollbar-thumb:hover {
+            cursor: grab;
+        }
+        .cardsGallery {
+            margin-top: 90px;
+        }
+    }
+}

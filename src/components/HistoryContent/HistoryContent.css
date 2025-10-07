@@ -1,0 +1,170 @@
+.HistorySection {
+    .parent {
+        .child::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #262626;
+            background-color: white;
+            left: -7%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+        }
+        .child {
+            max-width: 67.5vw;
+            margin-bottom: 100px;
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            position: relative;
+            z-index: 1;
+            .cardHistory::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 2px solid #262626;
+                background-color: white;
+                left: -12px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .cardHistory {
+                max-width: 364.31px;
+                /* width: 18.9744vw; */
+                padding: 30px 50px;
+                border: 2px solid #262626;
+                border-radius: 12px;
+                box-shadow: 6px 6px 0px 2px #1E1E1E;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                position: relative;
+                z-index: 1;
+                img {
+                    width: 87px;
+                    height: 87px;
+                }
+                .number {
+                    font-size: 68px;
+                    font-weight: 700;
+                    color: #1A1A1A;
+                }
+            }
+            .cardHistory::after {
+                content: "";
+                position: absolute;
+                width: 49px;
+                height: 2px;
+                background-color: #000;
+                /* left: -60px; */
+                left: -20%;
+                top: 50%;
+                transform: translateY(-50%);
+                border: 12px solid #FFBE99;
+                z-index: -1;
+            }
+            .text {
+                width: 41.5463vw;
+                h2 {
+                    margin-bottom: 20px;
+                    font-size: 28px;
+                    font-weight: 700;
+                    color: #1A1A1A;
+                }
+                .desc {
+                    font-family: "Outfit", sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #333333;
+                    line-height: 150%;
+                }
+            }
+        }
+        .child::after {
+            /* content: "";
+            position: absolute;
+            width: 248px;
+            height: 2px;
+            background-color: #000;
+            border: 12px solid #FFBE99;
+            z-index: -1;
+            transform: rotate(90deg);
+            left: -20%;
+            top: 50%; */
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .HistorySection {
+        .parent {
+            .child {
+                margin-bottom: 80px;
+                gap: 40px;
+                .cardHistory {
+                    max-width: 259px;
+                    padding: 24px 34px;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 0px 1px #1E1E1E;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                    .number {
+                        font-size: 48px;
+                    }
+                }
+                .cardHistory::after {
+                    width: 32px;
+                }
+                .text {
+                    h2 {
+                        margin-bottom: 16px;
+                        font-size: 24px;
+                    }
+                    .desc {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .HistorySection {
+        .parent {
+            .child {
+                margin-bottom: 50px;
+                flex-direction: column;
+                gap: 30px;
+                .cardHistory {
+                    max-width: 206px;
+                    padding: 20px 24px;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    .number {
+                        font-size: 38px;
+                    }
+                }
+                .cardHistory::after {
+                    width: 16px;
+                }
+                .text {
+                    width: 100%;
+                    h2 {
+                        margin-bottom: 12px;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

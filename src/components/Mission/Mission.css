@@ -1,0 +1,24 @@
+.mission {
+    .cardsMission {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .mission {
+        .cardsMission {
+            gap: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .mission {
+        .cardsMission {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}

@@ -1,0 +1,238 @@
+footer {
+    width: 94.7916vw;
+    padding: 100px 113px 40px;
+    margin: 0 auto 50px;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    background-color: #FFFFFF;
+    font-family: "Outfit", sans-serif !important;
+    .cols {
+        padding-bottom: 50px;
+        border-bottom: 1px solid #262626;
+        display: flex;
+        justify-content: space-between;
+        .colOne {
+            width: 27.03125vw;
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 8.31px;
+                color: #262626;
+            }
+            .desc {
+                margin: 20px 0px 50px;
+                font-family: "Outfit", sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 150%;
+                color: #262626;
+            }
+            .contacts {
+                .contact {
+                    margin-bottom: 24px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 6px;
+                        border: 2px solid #262626;
+                        background-color: #FFF5F0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    p {
+                        font-family: "Outfit", sans-serif;
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .flexCols {
+            display: flex;
+            justify-content: space-between;
+        }
+        .col {
+            width: 11.7708vw;
+            font-size: 20px;
+            .main {
+                margin-bottom: 24px;
+                font-weight: 600;
+                color: #262626;
+            }
+            p {
+                margin-bottom: 14px;
+                font-weight: 500;
+                color: #333333;
+            }
+        }
+    }
+    .row {
+        padding: 30px 0px;
+        border-bottom: 1px solid #262626;
+        display: flex;
+        justify-content: space-between;
+        .terms {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            p {
+                font-family: "Outfit", sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                color: #333333;
+            }
+            p:not(:last-child) {
+                border-right: 2px solid;
+                padding-right: 16px;
+            }
+        }
+        .socails {
+            display: flex;
+            gap: 14px;
+            .socail {
+                width: 56px;
+                height: 56px;
+                border: 2px solid #262626;
+                border-radius: 8px;
+                background-color: #FFDECC;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .copy {
+        width: fit-content;
+        margin: 30px auto 0px;
+        font-family: "Outfit", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #656567;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    footer {
+        padding: 80px 80px 40px;
+        margin-bottom: 40px;
+        .cols {
+            padding-bottom: 40px;
+            .colOne {
+                .desc {
+                    margin: 16px 0px 40px;
+                    font-size: 16px;
+                }
+                .contacts {
+                    .contact {
+                        margin-bottom: 20px;
+                        gap: 8px;
+                        .img {
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 4px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .col {
+                font-size: 16px;
+                .main {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .row {
+            padding: 20px 0px;
+            .terms {
+                gap: 10px;
+                p {
+                    font-size: 16px;
+                }
+                p:not(:last-child) {
+                    padding-right: 10px;
+                }
+            }
+            .socails {
+                .socail {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 6px;
+                }
+            }
+        }
+        .copy {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer {
+        width: 91.7948vw;
+        padding: 60px 30px 30px 30px;
+        margin-bottom: 20px;
+        .cols {
+            margin: auto;
+            width: 76.4102vw;
+            padding-bottom: 30px;
+            flex-direction: column;
+            .colOne {
+                width: 100%;
+                margin-bottom: 40px;
+                .logo {
+                    width: 76.4102vw;
+                    justify-content: center;
+                }
+                .desc {
+                    width: 76.4102vw;
+                    align-self: self-start;
+                }
+                .contacts {
+                    align-self: start;
+                }
+            }
+            .flexCols {
+                flex-wrap: wrap;
+                row-gap: 50px;
+            }
+            .col {
+                width: 34.3589vw;
+            }
+        }
+        .row {
+            flex-direction: column;
+            align-items: center;
+            padding: 16px 0px;
+            gap: 20px;
+            .terms {
+                gap: 6px;
+                p {
+                    font-size: 14px;
+                }
+                p:not(:last-child) {
+                    padding-right: 6px;
+                }
+            }
+            .socails {
+                .socail {
+                    width: 44px;
+                    height: 44px;
+                }
+            }
+        }
+        .copy {
+            margin-top: 16px;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}

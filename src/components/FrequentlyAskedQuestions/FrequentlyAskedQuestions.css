@@ -1,0 +1,28 @@
+.frequentlyAskedQuestions {
+    .cardsFaq {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .frequentlyAskedQuestions {
+        .cardsFaq {
+            margin-top: 80px;
+            gap: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .frequentlyAskedQuestions {
+        .cardsFaq {
+            margin-top: 50px;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

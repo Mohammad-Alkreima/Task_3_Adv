@@ -1,0 +1,17 @@
+.ourBenefits {
+    .cards {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .ourBenefits {
+        .cards {
+            row-gap: 40px
+        }
+    }
+}

@@ -1,0 +1,126 @@
+
+    nav {
+        width: 94.73958vw;  
+        margin: 0px auto;
+        border: 2px solid #262626;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        position: sticky;
+        top: 20px;
+        z-index: 101;
+        .logo {
+            padding: 20px 24px;
+            border-right: 2px solid #262626;
+            border-radius: 12px 0px 0px 12px;
+            background-color: #FF8D4D;
+            display: flex;
+            align-items: center;
+            gap: 6.65px;
+            span {
+                color: #262626;
+                font-weight: bold;
+            }
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                display: flex;
+                a {
+                    padding: 25px 34px;
+                    border-left: 2px solid #262626;
+                    font-family: "Outfit", sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: #262626;
+                    &.active {
+                        background-color: #FFEFE5;
+                    }
+                }
+            }
+            li:last-child {
+                border-radius: 0px 12px 12px 0px;
+                background-color: #FFAE80;
+            }
+        }
+
+        .barsIcon {
+            display: none;
+        }
+    }
+    
+
+
+.navMenu {
+    width: 94.73958vw;
+    display: none;
+    position: fixed;
+    z-index: 100;
+}
+
+.navMenu.show {
+    display: block;
+    position: relative;
+    ul {
+        width: 100%;
+        list-style: none;
+        background-color: #ff8d4d;
+        position: fixed;
+        z-index: 100;
+        li {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            padding: 20px 16px;
+            border-top: 1px solid #000000;
+            border-bottom: 1px solid #000000;
+            background-color: #ffdecc;
+            a {
+                font-family: "Outfit", sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                text-decoration: none;
+                color: #262626;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+        nav {
+            border-radius: 8px;
+            .logo {
+                padding: 16px 20px;
+                border-radius: 8px 0px 0px 8px;
+            }
+            ul {
+                
+                li {
+                    a {
+                        font-size: 16px;
+                        padding: 21px 30px;
+                    }
+                }
+                li:last-child {
+                    border-radius: 0px 8px 8px 0px;
+            }
+            }
+        }
+    }
+
+
+@media screen and (max-width: 992px) {
+        nav {
+            ul {
+                display: none;
+            }
+            .barsIcon {
+                display: block;
+                padding: 17px 30px;
+                border-left: 2px solid #262626;
+            }
+        }
+    }

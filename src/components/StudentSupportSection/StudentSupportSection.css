@@ -1,0 +1,91 @@
+.studentSupportSection {
+    .allCards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 50px 40px;
+        .card {
+            width: 24.25vw;
+            max-width: 100%;
+            min-height: 307px;
+            border: 2px solid #262626;
+            border-radius: 12px;
+            box-shadow: 6px 6px 0px 2px #1E1E1E;
+            padding: 80px 50px 50px;
+            background-color: white;
+            position: relative;
+            .icon {
+                width: 74px;
+                height: 74px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid #262626;
+                background-color: #FFDECC;
+                border-radius: 12px;
+                position: absolute;
+                top: -37px;
+                left: 37px;
+            }
+            h2 {
+                font-size: 28px;
+                font-weight: bold;
+                color: #1A1A1A;
+            }
+            p {
+                margin-top: 20px;
+                font-family: "Outfit", sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 150%;
+                color: #4C4C4D;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .studentSupportSection {
+        .allCards {
+            gap: 40px;
+            .card {
+                border-radius: 10px;
+                box-shadow: 4px 4px 0px 2px #1E1E1E;
+                padding: 60px 40px 40px;
+                .icon {
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 8px;
+                    top: -28px;
+                    left: 28px;
+                }
+                h2 {
+                    font-size: 24px;
+                }
+                p {
+                    margin-top: 16px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .studentSupportSection {
+        .allCards {
+            flex-direction: column;
+            .card {
+                width: 91.79487vw;
+                box-shadow: 4px 4px 0px 1px #1E1E1E;
+                padding: 50px 40px 30px 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h2 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

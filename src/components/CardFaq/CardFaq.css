@@ -1,0 +1,108 @@
+.frequentlyAskedQuestions {
+    .cardsFaq {
+        .cardFaq {
+            width: 38.15625vw;
+            height: 128px;
+            padding: 34px 40px;
+            border-radius: 12px;
+            border: 2px solid #262626;
+            background-color: #FFEFE5;
+            &.show {
+                height: auto;
+                background-color: white;
+                transition: 0.5s;
+            }
+            .ques {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                p {
+                    max-width: 621px;
+                    font-family: "Outfit", sans-serif;
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #262626;
+                }
+                .img {
+                    width: 40px;
+                    height: 40px;
+                    padding: 12px;
+                    border-radius: 6px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FFF5F0;
+                    border: 2px solid #262626;
+                }
+            }
+            .desc {
+                width: 32.34375vw;
+                padding-top: 24px;
+                margin-top: 24px;
+                border-top: 2px solid #262626;
+                font-family: "Outfit", sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                color: #333333;
+                
+                display: none;
+            }
+            .desc.show {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .frequentlyAskedQuestions {
+        .cardsFaq {
+            .cardFaq {
+                max-width: 100%;
+                padding: 24px 30px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                .ques {
+                    p {
+                        font-size: 18px;
+                    }
+                    .img {
+                        width: 32px;
+                        height: 32px;
+                        padding: 9.33px;
+                        border-radius: 4px;
+                    }
+                }
+                .desc {
+                    padding-top: 20px;
+                    margin-top: 20px;
+                    font-size: 16px;                   
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .frequentlyAskedQuestions {
+        .cardsFaq {
+            .cardFaq {
+                width: 91.7948vw;
+                padding: 20px 24px;
+                .desc {
+                    padding-top: 24px;
+                    margin-top: 24px;
+                }
+                .desc.show {
+                    width: 100%;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}

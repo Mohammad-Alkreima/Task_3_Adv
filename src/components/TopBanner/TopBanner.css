@@ -1,0 +1,71 @@
+    .topBanner {
+        width: 94.73958vw;
+        height: 58px;
+        margin: 18px auto 14px;
+        padding: 14px 0px;
+        background-color: #FFDECC;
+        border: 2px solid #262626;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .circleTop {
+            position: absolute;
+            top: 0;
+            left: 18vw;
+            width: 60px;
+        } 
+        div {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            p {
+                font-family: "Outfit", sans-serif;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 150%;
+            }
+        }
+        .circleBottom {
+            position: absolute;
+            bottom: 0;
+            right: 18vw;
+            width: 50px;
+            transform: rotate(180deg);
+        }
+    }
+
+@media screen and (max-width: 1440px) {
+        .topBanner {
+            div {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+
+@media screen and (max-width: 992px) {
+        .topBanner {
+            width: 93.53846vw;
+            margin: 40px auto 14px;
+            padding: 12px 0px;
+            overflow: hidden;
+            .circleTop {
+                width: 32.5px;
+                left: 0px;
+            } 
+            div {
+                padding: 0px 2px;
+                gap: 10px;
+                p {
+                    font-size: 14px;
+                }
+            }
+            .circleBottom {
+                width: 32.5px;
+                right: -15px;
+            }
+        }
+    }

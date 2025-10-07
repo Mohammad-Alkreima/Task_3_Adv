@@ -1,0 +1,152 @@
+.awards {
+    .allCards {
+        overflow: hidden;
+        padding: 60px 10px;
+        .top {
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            transform: translateX(calc(var(--idx) * (-100% / var(--visible) + -40px / var(--visible))));
+            transition: transform 0.5s ease-in-out;
+            .card {
+                /* flex: 0 0 calc(100% / var(--visible)); */
+                /* min-width: 26.25vw; */
+                /* max-width: 100%; */
+                flex: 0 0 calc((100% - (40px * (var(--visible) - 1))) / var(--visible));
+                max-width: calc((100% - (40px * (var(--visible) - 1))) / var(--visible));
+                min-height: 307px;
+                border: 2px solid #262626;
+                border-radius: 12px;
+                box-shadow: 6px 6px 0px 2px #1E1E1E;
+                padding: 80px 50px 50px;
+                position: relative;
+                .icon {
+                    width: 74px;
+                    height: 74px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px solid #262626;
+                    background-color: #FFDECC;
+                    border-radius: 12px;
+                    position: absolute;
+                    top: -37px;
+                    left: 37px;
+                }
+                h2 {
+                    font-size: 28px;
+                    font-weight: bold;
+                    color: #1A1A1A;
+                }
+                p {
+                    margin-top: 20px;
+                    font-family: "Outfit", sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 150%;
+                    color: #4C4C4D;
+                }
+            }
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-size: 22px;
+                font-weight: 700;
+                color: #1A1A1A;
+            }
+            .arrows {
+                display: flex;
+                gap: 20px;
+                button {
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 8px;
+                    border: 2px solid #333333;
+                    background-color: white;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .awards {
+        .allCards {
+            padding: 40px 10px;
+            .top {
+                margin-bottom: 40px;
+                gap: 30px;
+                transform: translateX(calc(var(--idx) * (-100% / var(--visible) + -30px / var(--visible))));
+                .card {
+                    max-width: calc((100% - (30px * (var(--visible) - 1))) / var(--visible));
+                    flex: 0 0 calc((100% - (30px * (var(--visible) - 1))) / var(--visible));
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 0px 2px #1E1E1E;
+                    padding: 60px 40px 40px;
+                    .icon {
+                        width: 56px;
+                        height: 56px;
+                        border-radius: 8px;
+                        top: -28px;
+                        left: 28px;
+                    }
+                    h2 {
+                        font-size: 24px;
+                    }
+                    p {
+                        margin-top: 16px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .bottom {
+                p {
+                    font-size: 18px;
+                }
+                .arrows {
+                    gap: 16px;
+                    button {
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .awards {
+        .allCards {
+            padding: 30px 10px 0px 0px;
+            .top {
+                margin-bottom: 30px;
+                transform: translateX(calc(var(--idx) * (-100% / var(--visible) + -30px / var(--visible))));
+                .card {
+                    box-shadow: 4px 4px 0px 1px #1E1E1E;
+                    padding: 50px 40px 30px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .icon {
+                        width: 56px;
+                        height: 56px;
+                        border-radius: 8px;
+                        top: -28px;
+                        left: 28px;
+                    }
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

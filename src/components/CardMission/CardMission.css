@@ -1,0 +1,77 @@
+.mission {
+    .cardsMission {
+        .card {
+            max-width: 768px;
+            padding: 60px;
+            border: 2px solid #262626;
+            border-radius: 12px;
+            box-shadow: 6px 6px 0px 2px #1E1E1E;
+            .mainTitle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h2 {
+                    font-size: 48px;
+                    font-weight: 700;
+                    color: #1A1A1A;
+                }
+                img {
+                    max-width: 100%;
+                }
+            }
+            p {
+                max-width: 748px;
+                margin-top: 60px;
+                font-family: "Outfit", sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 150%;
+                color: #333333;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .mission {
+        .cardsMission {
+            .card {
+                max-width: 620px;
+                padding: 50px;
+                border-radius: 10px;
+                box-shadow: 4px 4px 0px 2px #1E1E1E;
+                .mainTitle {
+                    h2 {
+                        font-size: 38px;
+                    }
+                }
+                p {
+                    max-width: 520px;
+                    margin-top: 50px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .mission {
+        .cardsMission {
+            .card {
+                max-width: 91.7948vw;
+                padding: 40px;
+                box-shadow: 4px 4px 0px 1px #1E1E1E;
+                .mainTitle {
+                    h2 {
+                        font-size: 30px;
+                    }
+                }
+                p {
+                    max-width: 71.2820vw;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}

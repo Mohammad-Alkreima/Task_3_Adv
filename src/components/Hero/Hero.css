@@ -1,0 +1,174 @@
+header {
+    .hero {
+        width: 82.8125vw;
+        margin: 160px auto 0px;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        .img {
+            width: 39.84375vw;
+            background-color: #FFBE99;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            img {
+                max-width: 100%;
+            }
+            span {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: white;
+                border-radius: 50%;
+                border: 2px solid #262626;
+            }
+            .topLeft {
+                top: -10px;
+                left: -10px;
+            }
+            .topRight {
+                top: -10px;
+                right: -10px;
+            }
+            .bottomRight {
+                bottom: -10px;
+                right: -10px;
+            }
+            .bottomLeft {
+                bottom: -10px;
+                left: -10px;
+            }
+            .absDesgin {
+                position: absolute;
+            }
+        }
+        .heroText {
+            width: 39.84375vw;
+            .welcome {
+                width: fit-content;
+                padding-bottom: 6px;
+                font-family: "Outfit", sans-serif;
+                font-size: 22px;
+                font-weight: 500;
+                border-bottom: 2px solid #262626;
+            }
+            h1 {
+                font-size: 54px;
+                font-weight: 800;
+                line-height: 130%;
+                color: #1A1A1A;
+                span {
+                    color: #FF8D4D;
+                }
+            }
+            .desc {
+                margin: 30px 0px 60px;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 150%;
+                color: #333333;
+            }
+            .info {
+                padding: 24px 50px;
+                background-color: #FFEFE5;
+                box-shadow: 8px 8px 0px 1px #FFBE99;
+                border: 2px solid #262626;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                gap: 13px;
+                div {
+                    max-width: 213px;
+                    color: #262626;
+                    p {
+                        font-family: "Outfit", sans-serif;
+                        font-size: 44px;
+                        font-weight: 800;
+                    }
+                    span {
+                        font-family: "Outfit", sans-serif;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    header {
+        .hero {
+            margin: 130px auto 0px;
+            gap: 50px;
+            .heroText {
+                .welcome {
+                    font-size: 18px;
+                }
+                h1 {
+                    font-size: 40px;
+                }
+                .desc {
+                    margin: 20px 0px 50px;
+                    font-size: 16px;
+                }
+                .info {
+                    gap: 10px;
+                    padding: 20px 40px;
+                    box-shadow: 6px 6px 0px 1px #FFBE99;
+                    div {
+                        p {
+                            font-size: 34px;
+                        }
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        .hero {
+            width: 91.79487vw;
+            margin: 100px auto 0px;
+            flex-direction: column;
+            text-align: center;
+            gap: 50px;
+            .img {
+                width: 91.79487vw;
+            }
+            .heroText {
+                width: 91.79487vw;
+                .welcome {
+                    margin: auto;
+                    font-size: 16px;
+                }
+                h1 {
+                    font-size: 30px;
+                }
+                .desc {
+                    margin: 18px 0px 40px;
+                }
+                .info {
+                    padding: 40px;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    box-shadow: 4px 4px 0px 1px #FFBE99;
+                    text-align: center;
+                    div:nth-of-type(1), div:nth-of-type(2) {
+                        width: 278px;
+                        padding-bottom: 20px;
+                        border-bottom: 2px solid #262626;
+                    }
+                }
+            }
+        }
+    }
+}

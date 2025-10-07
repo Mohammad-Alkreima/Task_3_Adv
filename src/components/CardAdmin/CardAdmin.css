@@ -1,0 +1,137 @@
+.admissionProcessSection {
+    .cardsAdmin {
+        .cardNum {
+            width: 25.9546vw;            
+            .num {
+                width: fit-content;
+                margin-bottom: 77px;
+                position: relative;
+                p::before {
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    border: 2px solid #262626;
+                    border-radius: 50%;
+                    background-color: white;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                }
+                p {
+                    width: max-content;
+                    padding: 14px 30px;
+                    border: 2px solid #262626;
+                    box-shadow: 6px 6px 0px 2px #1E1E1E;
+                    border-radius: 12px;
+                    background-color: white;
+                    font-size: 60px;
+                    font-weight: 800;
+                    color: #1A1A1A;
+                }
+                p::after {
+                    content: "";
+                    position: absolute;
+                    width: 2px;
+                    height: 69px;
+                    border: 10px solid #FFBE99;
+                    background-color: #262626;
+                    bottom: -50%;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                    z-index: -1;
+                }
+            }
+            .text {
+                min-height: 420px;
+                padding: 50px;
+                border: 2px solid #262626;
+                border-radius: 12px;
+                box-shadow: 6px 6px 0px 2px #1E1E1E;
+                background-color: white;
+                h2 {
+                    margin-bottom: 20px;
+                    font-size: 40px;
+                    font-weight: 700;
+                    color: #1A1A1A;
+                }
+                p {
+                    font-family: "Outfit", sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #4C4C4D;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .admissionProcessSection {
+        .cardsAdmin {
+            .cardNum {
+                .num {
+                    margin-bottom: 51px;
+                    p {
+                        padding: 10px 24px;
+                        box-shadow: 4px 4px 0px 1px #1E1E1E;
+                        border-radius: 10px;
+                        font-size: 44px;
+                    }
+                }
+                .text {
+                    min-height: 380px;
+                    padding: 40px;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 0px 1px #1E1E1E;
+                    h2 {
+                        margin-bottom: 16px;
+                        font-size: 30px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .admissionProcessSection {
+        .cardsAdmin {
+            .cardNum {
+                width: 91.7948vw;
+                max-width: 100%;
+                position: relative;
+                .num {
+                    margin: 0px auto 51px;
+                    p {
+                        font-size: 40px;
+                    }
+                }
+                .text {
+                    min-height: 230px;
+                    padding: 30px;
+                    h2 {
+                        margin-bottom: 14px;
+                        font-size: 26px;
+                    }
+                }
+            }
+            .cardNum:not(:last-child):after {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 90px;
+                border: 10px solid #FFBE99;
+                background-color: #262626;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 100%);
+                z-index: -1;
+            }
+        }
+    }
+}

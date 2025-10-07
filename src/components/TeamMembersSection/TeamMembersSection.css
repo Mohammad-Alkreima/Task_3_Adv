@@ -1,0 +1,16 @@
+.teamMembers {
+    .cardsTeam {
+        display: flex;
+        justify-content: space-between;
+        row-gap: 50px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .teamMembers {
+        .cardsTeam {
+            row-gap: 40px;
+        }
+    }
+}
