@@ -115,6 +115,7 @@
                     a {
                         font-size: 16px;
                         padding: 21px 30px;
+                        white-space: nowrap;
                     }
                 }
                 li:last-child {
