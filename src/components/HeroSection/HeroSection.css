@@ -133,6 +133,7 @@
 
 @media screen and (max-width: 992px) {
     .heroSertion {
+        width: 91.7948vw;
         padding: 50px 30px;
         .main {
             flex-direction: column;
