@@ -16,9 +16,14 @@
             font-weight: 600;
             color: #1A1A1A;
             white-space: nowrap;
+            cursor: pointer;
+            transition: 0.1s background-color ease-in-out;
             &.active {
                 background-color: #FFEFE5;
             }
+        }
+        p:hover {
+            background-color: #FFEFE5;
         }
     }
     .cardsGallery {
