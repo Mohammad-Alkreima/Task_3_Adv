@@ -8,7 +8,6 @@ function App() {
 
   return (
     <>
-      {/* <Header/> */}
       <TopBanner image1="/Task_3_Adv/assets/img/circle.png"
                             text= "Admission is Open, Grab your seat now"
                             icon="/Task_3_Adv/assets/img/arrow.svg"
@@ -19,7 +18,6 @@ function App() {
       <NavBar logo="/Task_3_Adv/assets/img/logo.svg"
               logoAlt="logo svg"
               textLogo="Little Learners"
-              // items={["Home", "About Us", "Academics", "Admissions", "Student Life", "Contact"]}
               items={[
                   {
                       url: "/",
@@ -46,9 +44,9 @@ function App() {
                       content: "Contact"
                   }
               ]}
-              bars="assets/img/bars.svg"
+              bars="/Task_3_Adv/assets/img/bars.svg"
               barsAlt="bars svg"
-              close="assets/img/close.svg"
+              close="/Task_3_Adv/assets/img/close.svg"
       />
       <Main/>
       <Footer 

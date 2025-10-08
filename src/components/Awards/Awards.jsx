@@ -16,11 +16,11 @@ const Awards = () => {
     );
   };
 
-const prev = () => {
-  setIndex((prev) =>
-    prev === 0 ? AwardsData.length - visible : prev - 1
-  );
-};
+  const prev = () => {
+    setIndex((prev) =>
+      prev === 0 ? AwardsData.length - visible : prev - 1
+    );
+  };
 
   const visible = getVisibleCount();
     return (

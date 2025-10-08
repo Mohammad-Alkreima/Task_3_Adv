@@ -1,8 +1,6 @@
 .feeStructureSection {
     .tableContainer {
         padding: 60px;
-        /* overflow-y: auto; */
-        /* overflow-x: auto; */
         border: 2px solid #262626;
         border-radius: 12px;
         box-shadow: 6px 6px 0px 2px #1E1E1E;
@@ -11,10 +9,6 @@
             table {
                 width: 100%;
                 border-collapse: separate;
-                /* padding: 60px; */
-                /* border: 2px solid #262626;
-                border-radius: 12px;
-                box-shadow: 6px 6px 0px 2px #1E1E1E; */
                 thead {
                     tr {
                         th:first-child {
@@ -31,7 +25,6 @@
                             font-size: 20px;
                             font-weight: 500;
                             color: #262626;
-                            /* white-space: nowrap; */
                         }
                         th:last-child {
                             border-right: 2px solid #262626;
@@ -99,12 +92,10 @@
             }
             .tableInner::-webkit-scrollbar {
                     width: 8px;
-                    /* margin-bottom: 20px; */
                 }       
                 .tableInner::-webkit-scrollbar-track {
                     background-color: #262626;
                     border-radius: 10px;
-                    /* margin: 30px; */
                 }
                 .tableInner::-webkit-scrollbar-thumb {
                     background-color: #FFAE80;

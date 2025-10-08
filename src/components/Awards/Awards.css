@@ -10,9 +10,6 @@
             transform: translateX(calc(var(--idx) * (-100% / var(--visible) + -40px / var(--visible))));
             transition: transform 0.5s ease-in-out;
             .card {
-                /* flex: 0 0 calc(100% / var(--visible)); */
-                /* min-width: 26.25vw; */
-                /* max-width: 100%; */
                 flex: 0 0 calc((100% - (40px * (var(--visible) - 1))) / var(--visible));
                 max-width: calc((100% - (40px * (var(--visible) - 1))) / var(--visible));
                 min-height: 307px;

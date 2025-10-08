@@ -18,7 +18,6 @@
         align-items: center;
         gap: 8px;
         .text {
-            /* max-width: 765px; */
             span {
                 width: fit-content;
                 padding: 10px 20px;
@@ -40,8 +39,6 @@
             }
         }
         .textLeft {
-            /* width: 39.8437vw; */
-            /* max-width: 765px; */
             .desc {
                 max-width: 765px;
                 font-family: "Outfit", sans-serif;
@@ -52,15 +49,11 @@
             }
             .contacts {
                 width: 44vw;
-                /* max-width: 765px; */
                 margin-top: 50px;
                 display: flex;
-                /* justify-content: space-between; */
                 gap: 24px;
                 flex-wrap: wrap;
                 .contact {
-                    /* width: 19.2968vw;
-                    width: 18vw; */
                     max-width: 370.5px;
                     padding: 20px;
                     border: 2px solid #262626;
@@ -75,9 +68,6 @@
                         border: 2px solid #262626;
                         border-radius: 6px;
                         background-color: #FFF5F0;
-                        img {
-                            /* max-width: 100%; */
-                        }
                     }
                     .textContact {
                         font-family: "Outfit", sans-serif;
@@ -120,12 +110,9 @@
                     font-size: 16px;
                 }
                 .contacts {
-                    /* width: 50vw; */
-                    /* width: 30.1527vw; */
                     margin-top: 30px;
                     gap: 20px;
                     .contact {
-                        /* width: 25vw; */
                         max-width: 257.5px;
                         padding: 16px;
                         border-radius: 8px;
@@ -133,9 +120,6 @@
                         .icon {
                             padding: 6px;
                             border-radius: 4px;
-                            img {
-                                /* max-width: 100%; */
-                            }
                         }
                         .textContact {
                             font-size: 16px;

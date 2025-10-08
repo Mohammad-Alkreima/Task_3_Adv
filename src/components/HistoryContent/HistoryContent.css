@@ -1,18 +1,5 @@
 .HistorySection {
     .parent {
-        .child::before {
-            content: "";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            border: 2px solid #262626;
-            background-color: white;
-            left: -7%;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 3;
-        }
         .child {
             max-width: 67.5vw;
             margin-bottom: 100px;
@@ -21,21 +8,8 @@
             gap: 50px;
             position: relative;
             z-index: 1;
-            .cardHistory::before {
-                content: "";
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                border: 2px solid #262626;
-                background-color: white;
-                left: -12px;
-                top: 50%;
-                transform: translateY(-50%);
-            }
             .cardHistory {
                 max-width: 364.31px;
-                /* width: 18.9744vw; */
                 padding: 30px 50px;
                 border: 2px solid #262626;
                 border-radius: 12px;
@@ -54,20 +28,7 @@
                     font-weight: 700;
                     color: #1A1A1A;
                 }
-            }
-            .cardHistory::after {
-                content: "";
-                position: absolute;
-                width: 49px;
-                height: 2px;
-                background-color: #000;
-                /* left: -60px; */
-                left: -20%;
-                top: 50%;
-                transform: translateY(-50%);
-                border: 12px solid #FFBE99;
-                z-index: -1;
-            }
+            }          
             .text {
                 width: 41.5463vw;
                 h2 {
@@ -84,18 +45,6 @@
                     line-height: 150%;
                 }
             }
-        }
-        .child::after {
-            /* content: "";
-            position: absolute;
-            width: 248px;
-            height: 2px;
-            background-color: #000;
-            border: 12px solid #FFBE99;
-            z-index: -1;
-            transform: rotate(90deg);
-            left: -20%;
-            top: 50%; */
         }
     }
 }

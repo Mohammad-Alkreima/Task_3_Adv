@@ -44,6 +44,11 @@
             li:last-child {
                 border-radius: 0px 12px 12px 0px;
                 background-color: #FFAE80;
+                a {
+                    &.active {
+                        border-radius: 0px 12px 12px 0px;
+                    }
+                }
             }
         }
 
