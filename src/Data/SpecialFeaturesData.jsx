@@ -16,7 +16,7 @@ const SpecialFeaturesData = [
         desc: "Through language immersion programs, children have the opportunity to learn a second language, enhancing cognitive development and global awareness."
     },
     {
-        icon: "/assets/img/academics/icon-4.png",
+        icon: "assets/img/academics/icon-4.png",
         title: "Art and Creativity",
         desc: "Art is celebrated at Little Learners Academy. Our art-focused activities encourage self-expression, creativity, and the appreciation of various art forms."
     },

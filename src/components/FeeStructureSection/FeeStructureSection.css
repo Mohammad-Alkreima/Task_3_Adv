@@ -1,13 +1,11 @@
 .feeStructureSection  {
-    .tableProgram {
+    .tableContainer {
         margin-bottom: 80px;
     }
 }
 
 @media screen and (max-width: 1440px) {
-    .feeStructureSection  {
-        .tableProgram {
-            margin-bottom: 60px;
-        }
-}
+    .tableContainer {
+        margin-bottom: 60px;
+    }
 }

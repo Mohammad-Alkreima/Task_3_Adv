@@ -169,6 +169,11 @@
                     max-width: 76.4102vw;
                     text-align: center;
                 }
+                .contacts {
+                    margin: 30px auto 0px;
+                    justify-content: center;
+                    gap: 30px;
+                }
             }
         }
     }

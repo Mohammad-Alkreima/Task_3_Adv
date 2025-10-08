@@ -9,6 +9,7 @@
                     font-weight: 500;
                     color: #262626;
                     background-color: #FFFCFA;
+                    /* white-space: nowrap; */
                 }
             }
             tr:first-child td {
@@ -77,6 +78,20 @@
                 }
                 tr:last-child td:last-child {
                     border-bottom-right-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .feeStructureSection {
+        table {
+            tbody {
+                tr {
+                    td {
+                        white-space: nowrap;
+                    }
                 }
             }
         }

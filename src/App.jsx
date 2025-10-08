@@ -1,10 +1,7 @@
-import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import TopBanner from './components/TopBanner/TopBanner'
-import Home from './Pages/Home/Home'
 import NavBar from './components/NavBar/NavBar'
 
 function App() {
@@ -12,14 +9,14 @@ function App() {
   return (
     <>
       {/* <Header/> */}
-      <TopBanner image1="assets/img/circle.png"
+      <TopBanner image1="/Task_3_Adv/assets/img/circle.png"
                             text= "Admission is Open, Grab your seat now"
-                            icon="assets/img/arrow.svg"
-                            image2="assets/img/circle.png"
+                            icon="/Task_3_Adv/assets/img/arrow.svg"
+                            image2="/Task_3_Adv/assets/img/circle.png"
                             altImage="circle"
                             altIcon="arrow svg"
       />
-      <NavBar logo="assets/img/logo.svg"
+      <NavBar logo="/Task_3_Adv/assets/img/logo.svg"
               logoAlt="logo svg"
               textLogo="Little Learners"
               // items={["Home", "About Us", "Academics", "Admissions", "Student Life", "Contact"]}
@@ -57,10 +54,10 @@ function App() {
       <Footer 
           colOne = {
             [
-              {logo: "assets/img/logo.svg",
+              {logo: "/Task_3_Adv/assets/img/logo.svg",
               textLogo: "Little Learners",
               desc: "We believe in the power of play to foster creativity, problem-solving skills, and imagination.",
-              icon: {mail: "assets/img/mail.png", phone: "assets/img/phone.png", location: "assets/img/location.png"},
+              icon: {mail: "/Task_3_Adv/assets/img/mail.png", phone: "/Task_3_Adv/assets/img/phone.png", location: "/Task_3_Adv/assets/img/location.png"},
               textContact: {mail: "hello@littlelearners.com", phone: "+91 91813 23 2309",location: "Somewhere in the World"},
               }
             ]
@@ -102,9 +99,9 @@ function App() {
           }
           socails={
             [
-              {icon: "assets/img/facebook.png", alt: "facebook icon"},
-              {icon: "assets/img/twitter.png", alt: "twitter icon"},
-              {icon: "assets/img/linkedin.png", alt: "linkedin icon"}
+              {icon: "/Task_3_Adv/assets/img/facebook.png", alt: "facebook icon"},
+              {icon: "/Task_3_Adv/assets/img/twitter.png", alt: "twitter icon"},
+              {icon: "/Task_3_Adv/assets/img/linkedin.png", alt: "linkedin icon"}
             ]
           }
           copyRight= "Copyright © [2023] Little Learners Academy. All rights reserved."

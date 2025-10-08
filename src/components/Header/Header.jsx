@@ -7,8 +7,8 @@ const Header = () => {
     return (
         <>
             <header className="whiteSpace">
-                <Hero img="assets/img/heroImg.png"
-                        absDesgin="assets/img/Abstract Design.png"
+                <Hero img="/Task_3_Adv/assets/img/heroImg.png"
+                        absDesgin="/Task_3_Adv/assets/img/Abstract Design.png"
                         welcome= "Welcome to Little Learners Academy"
                         title= "Where Young Minds Blossom and "
                         subTitle= "Dreams Take Flight."

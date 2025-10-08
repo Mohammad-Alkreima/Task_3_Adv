@@ -1,33 +1,44 @@
 .feeStructureSection {
-    table {
-        width: 100%;
-        border-collapse: separate;
+    .tableContainer {
         padding: 60px;
+        /* overflow-y: auto; */
+        /* overflow-x: auto; */
         border: 2px solid #262626;
         border-radius: 12px;
         box-shadow: 6px 6px 0px 2px #1E1E1E;
         background-color: white;
-        thead {
-            tr {
-                th:first-child {
-                    border-bottom-left-radius: 12px;
-                    border-top-left-radius: 12px;
-                }
-                th {
-                    padding: 20px 34px;
-                    border: 2px solid #262626;
-                    border-right: none;
-                    background-color: #FFEFE5;
-                    text-align: left;
-                    font-family: "Outfit", sans-serif;
-                    font-size: 20px;
-                    font-weight: 500;
-                    color: #262626;
-                }
-                th:last-child {
-                    border-right: 2px solid #262626;
-                    border-bottom-right-radius: 12px;
-                    border-top-right-radius: 12px;
+        .tableInner {
+            table {
+                width: 100%;
+                border-collapse: separate;
+                /* padding: 60px; */
+                /* border: 2px solid #262626;
+                border-radius: 12px;
+                box-shadow: 6px 6px 0px 2px #1E1E1E; */
+                thead {
+                    tr {
+                        th:first-child {
+                            border-bottom-left-radius: 12px;
+                            border-top-left-radius: 12px;
+                        }
+                        th {
+                            padding: 20px 34px;
+                            border: 2px solid #262626;
+                            border-right: none;
+                            background-color: #FFEFE5;
+                            text-align: left;
+                            font-family: "Outfit", sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: #262626;
+                            /* white-space: nowrap; */
+                        }
+                        th:last-child {
+                            border-right: 2px solid #262626;
+                            border-bottom-right-radius: 12px;
+                            border-top-right-radius: 12px;
+                        }
+                    }
                 }
             }
         }
@@ -36,26 +47,70 @@
 
 @media screen and (max-width: 1440px) {
     .feeStructureSection {
-        table {
+        .tableContainer {
             padding: 50px;
             border-radius: 10px;
             box-shadow: 4px 4px 0px 1px #1E1E1E;
-            thead {
-            tr {
-                th:first-child {
-                    border-bottom-left-radius: 10px;
-                    border-top-left-radius: 10px;
-                }
-                th {
-                    padding: 18px 30px;
-                    font-size: 19px;
-                }
-                th:last-child {
-                    border-bottom-right-radius: 10px;
-                    border-top-right-radius: 10px;
+            .tableInner {
+                table {
+                    thead {
+                        tr {
+                            th:first-child {
+                                border-bottom-left-radius: 10px;
+                                border-top-left-radius: 10px;
+                            }
+                            th {
+                                padding: 18px 30px;
+                                font-size: 19px;
+                            }
+                            th:last-child {
+                                border-bottom-right-radius: 10px;
+                                border-top-right-radius: 10px;
+                            }
+                        }
+                    }
                 }
             }
+        } 
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .feeStructureSection {
+        .tableContainer {
+            width: 90vw;
+            padding: 30px 30px 50px;
+            border-right: none;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            box-shadow: 0 0 0 0;
+            .tableInner {
+                overflow-x: auto;
+                table {
+                    padding-bottom: 21px;
+                    thead {
+                        tr {
+                            th {
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+            .tableInner::-webkit-scrollbar {
+                    width: 8px;
+                    /* margin-bottom: 20px; */
+                }       
+                .tableInner::-webkit-scrollbar-track {
+                    background-color: #262626;
+                    border-radius: 10px;
+                    /* margin: 30px; */
+                }
+                .tableInner::-webkit-scrollbar-thumb {
+                    background-color: #FFAE80;
+                    border-radius: 10px;
+                }
         }
-        }
+        
     }
 }

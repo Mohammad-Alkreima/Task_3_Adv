@@ -50,10 +50,10 @@ const OurTestimonials = () => {
                 </div>
                 <div className="arrows">
                     <button className="left" onClick={prev}>
-                        <img src="assets/img/arrow-left.png" alt=""  />
+                        <img src="/Task_3_Adv/assets/img/arrow-left.png" alt=""  />
                     </button>
                     <button className="right" onClick={next}>
-                        <img src="assets/img/arrow-right.png" alt="" />
+                        <img src="/Task_3_Adv/assets/img/arrow-right.png" alt="" />
                     </button>
                 </div>
             </div>
